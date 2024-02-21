@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .divider-text {
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .divider-text span {
+            padding: 7px;
+            font-size: 12px;
+            position: relative;
+            z-index: 2;
+            background-color: #000;
+        }
+
+        .divider-text:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #fff;
+            top: 55%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .btn-facebook {
+            background-color: #405D9D;
+            color: #fff;
+        }
+
+        .btn-twitter {
+            background-color: #42AEEC;
+            color: #fff;
+        }
+
+        .card {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .card-title {
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .custom-select {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <hr>
+
+        <div class="card">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h4 class="card-title mt-3 text-center">Create Account</h4>
+                <p class="text-center">Get started with your free account</p>
+                <p>
+                    <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i> Login via Twitter</a>
+                    <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i> Login via Facebook</a>
+                </p>
+                <p class="divider-text">
+                    <span>OR</span>
+                </p>
+                <form action="your_redirect_page.html" method="post">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input name="fullname" class="form-control" placeholder="Full name" type="text" required>
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        <input name="email" class="form-control" placeholder="Email address" type="email" required>
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                        </div>
+                        <select class="custom-select" style="max-width: 120px;">
+                            <option selected="">+971</option>
+                            <option value="1">+972</option>
+                            <option value="2">+198</option>
+                            <option value="3">+701</option>
+                        </select>
+                        <input name="phone" class="form-control" placeholder="Phone number" type="text">
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input name="password" class="form-control" placeholder="Create password" type="password"
+                            required>
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input name="repeat_password" class="form-control" placeholder="Repeat password" type="password"
+                            required>
+                    </div>
+                    <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
+                    </div>
+                    <!-- form-group// -->
+                    <p class="text-center">Have an account? <a href="form.html">Log In</a> </p>
+                </form>
+            </article>
+        </div>
+        <!-- card.// -->
+
+    </div>
+    <!--container end.//-->
+
+</body>
+
+</html>
